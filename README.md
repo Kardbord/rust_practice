@@ -1,2 +1,3 @@
-# rust_practice
+# Rust Practice
+
 Miscellaneous practice exercises in Rust.
