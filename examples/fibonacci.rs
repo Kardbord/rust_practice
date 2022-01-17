@@ -37,7 +37,7 @@ fn prompt_and_compute_and_print() {
     let m: fibonacci::Method;
     loop {
         print!(
-            "Select the method that should be used to compute the ficonacci({}): ",
+            "Select the method that should be used to compute the fibonacci({}): ",
             n
         );
 
