@@ -12,7 +12,7 @@ fn main() {
 
 fn prompt_and_compute_and_print() {
     println!("======================================================");
-    let lower_bound: usize;
+    let lower_bound: u32;
     loop {
         print!("Input the inclusive lower bound for the fizzbuzz loop: ");
         io::stdout().flush().unwrap();
@@ -23,7 +23,7 @@ fn prompt_and_compute_and_print() {
             Ok(num) => num,
             Err(_) => {
                 eprintln!(
-                    "Error parsing {} as usize, please input a valid number.",
+                    "Error parsing {} as u32, please input a valid number.",
                     input.trim()
                 );
                 continue;
@@ -32,7 +32,7 @@ fn prompt_and_compute_and_print() {
         break;
     }
 
-    let upper_bound: usize;
+    let upper_bound: u32;
     loop {
         print!("Input the inclusive upper bound for the fizzbuzz loop: ");
         io::stdout().flush().unwrap();
@@ -43,7 +43,7 @@ fn prompt_and_compute_and_print() {
             Ok(num) => num,
             Err(_) => {
                 eprintln!(
-                    "Error parsing {} as usize, please input a valid number.",
+                    "Error parsing {} as u32, please input a valid number.",
                     input.trim()
                 );
                 continue;
